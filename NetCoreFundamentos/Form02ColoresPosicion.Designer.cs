@@ -97,7 +97,7 @@
             btnColor.Name = "btnColor";
             btnColor.Size = new Size(100, 36);
             btnColor.TabIndex = 6;
-            btnColor.Text = "Color";
+            btnColor.Text = "Colores";
             btnColor.UseVisualStyleBackColor = true;
             btnColor.Click += btnColor_Click;
             // 
