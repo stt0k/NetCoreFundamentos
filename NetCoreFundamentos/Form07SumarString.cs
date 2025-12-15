@@ -28,7 +28,7 @@ namespace NetCoreFundamentos
                 suma += numero;
             }
 
-            lblResultado.Text = "La suma es " + suma;
+            lblResultado.Text = "La suma es  " + suma;
         }
     }
 }
