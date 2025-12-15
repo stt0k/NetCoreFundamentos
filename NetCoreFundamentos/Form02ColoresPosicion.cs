@@ -26,11 +26,22 @@ namespace NetCoreFundamentos
 
         private void btnColor_Click(object sender, EventArgs e)
         {
-            int color1 = int.Parse(txtColor1.Text);
-            int color2 = int.Parse(txtColor2.Text);
-            int color3 = int.Parse(txtColor3.Text);
-
-            BackColor = Color.FromArgb(color1, color2, color3);
+            int rojo = int.Parse(txtColor1.Text);
+            int verde = int.Parse(txtColor2.Text);
+            int azul = int.Parse(txtColor3.Text);
+            if (rojo < 0 || rojo > 255)
+            {
+                MessageBox.Show("El valor rojo tiene que estar entre 0 y 255");
+            } else if (verde < 0 || verde > 255)
+            {
+                MessageBox.Show("El valor verde tiene que estar entre 0 y 255");
+            } else if (azul < 0 || azul > 255)
+            {
+                MessageBox.Show("El valor azul tiene que estar entre 0 y 255");
+            } else
+            {
+                BackColor = Color.FromArgb(rojo, verde, azul);
+            }
         }
     }
 }
